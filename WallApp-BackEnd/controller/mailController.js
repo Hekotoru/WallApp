@@ -10,7 +10,7 @@ module.exports = {
       }
     });
     smtpTransport.sendMail({  //email options
-      from: "Heko WallApp <hekotestapp@gmail.com>", // sender address.  Must be the same as authenticated user if using GMail.
+      from: "Heko WallApp <email@gmail.com>", // sender address.  Must be the same as authenticated user if using GMail.
       to: ""+userInfo.firstname+"<"+userInfo.email+">", // receiver
       subject: "Welcome to WallApp", // subject
       text: "Hello "+userInfo.firstname+" thanks for register in our website." // body
