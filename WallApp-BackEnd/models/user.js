@@ -7,14 +7,25 @@ module.exports = function(sequelize, DataTypes) {
         primaryKey: true,
         type: DataTypes.INTEGER
     },
-    username: DataTypes.STRING,
-    password: DataTypes.STRING,
-    firstname: DataTypes.STRING,
-    lastname: DataTypes.STRING
+    username: {
+      type: DataTypes.STRING
+    },
+    password: {
+      type: DataTypes.STRING
+    },
+    firstname: {
+      type: DataTypes.STRING
+    },
+    lastname: {
+      type: DataTypes.STRING
+    },
+    email: {
+      type: DataTypes.STRING
+    }
   }, {
     classMethods: {
       associate: function(models) {
-        User.hasMany(models.post);
+        User.hasMany(models.Post);
       }
     }
   });

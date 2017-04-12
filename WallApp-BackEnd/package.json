@@ -1,5 +1,5 @@
 {
-  "name": "wallapp",
+  "name": "wallapp-backend",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,9 +11,12 @@
     "debug": "~2.2.0",
     "express": "~4.14.0",
     "jade": "~1.11.0",
+    "jsonwebtoken": "^7.3.0",
     "morgan": "~1.7.0",
-    "sequelize": "^3.30.4",
+    "nodemailer": "^4.0.0",
+    "sequelize": "^2.0.0-rc1",
     "sequelize-cli": "^2.7.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "sqlite3": "^3.1.8"
   }
 }

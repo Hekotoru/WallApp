@@ -7,11 +7,17 @@ module.exports = function(sequelize, DataTypes) {
         primaryKey: true,
         type: DataTypes.INTEGER
     },
-    description: DataTypes.STRING
+    description: {
+      type: DataTypes.STRING,
+    },
+    code_user: {
+      type: DataTypes.STRING,
+      foreignKey: true
+    }
   }, {
     classMethods: {
       associate: function(models) {
-        Post.belongsTo(models.user);
+        Post.belongsTo(models.User);
       }
     }
   });

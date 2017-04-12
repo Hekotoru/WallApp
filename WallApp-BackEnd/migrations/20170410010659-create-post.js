@@ -8,8 +8,12 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      id: {
-        type: Sequelize.INTEGER
+      description: {
+      type: Sequelize.STRING,
+      },
+      code_user: {
+      type: Sequelize.STRING,
+      foreignKey: true
       },
       createdAt: {
         allowNull: false,
